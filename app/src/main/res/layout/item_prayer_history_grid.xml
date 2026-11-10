@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Weight increased to 2 -->
+    <TextView
+        android:id="@+id/tvHistoryPrayerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Fajr"
+        android:textStyle="bold"
+        android:paddingStart="4dp"
+        android:singleLine="true"
+        android:ellipsize="end" />
+
+    <TextView android:id="@+id/tvMon" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="-" android:singleLine="true"/>
+    <TextView android:id="@+id/tvTue" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="-" android:singleLine="true"/>
+    <TextView android:id="@+id/tvWed" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="-" android:singleLine="true"/>
+    <TextView android:id="@+id/tvThu" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="-" android:singleLine="true"/>
+    <TextView android:id="@+id/tvFri" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="-" android:singleLine="true"/>
+    <TextView android:id="@+id/tvSat" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="-" android:singleLine="true"/>
+    <TextView android:id="@+id/tvSun" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="-" android:singleLine="true"/>
+</LinearLayout>

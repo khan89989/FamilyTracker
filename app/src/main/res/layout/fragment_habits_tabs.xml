@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutHabits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#6200EE"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#6200EE" />
+
+    <!-- layout_weight=1 is REQUIRED, otherwise the pager is 0dp tall and both tabs render blank -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerHabits"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

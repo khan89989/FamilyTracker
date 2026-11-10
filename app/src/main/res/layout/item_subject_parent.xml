@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Expand/Collapse Indicator -->
+    <TextView
+        android:id="@+id/tvExpandIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▶"
+        android:textSize="14sp"
+        android:textColor="#6200EE"
+        android:layout_marginEnd="6dp" />
+
+    <!-- Subject Name with Single-Line Elision to Prevent Wrapping -->
+    <TextView
+        android:id="@+id/tvSubjectName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Math"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Compact Add Assignment Icon/Button -->
+    <Button
+        android:id="@+id/btnAddAssignment"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:text="+"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#4CAF50" />
+
+    <!-- Compact Edit Icon/Button -->
+    <Button
+        android:id="@+id/btnEditSubject"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:text="✏️"
+        android:textSize="12sp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#FF9800" />
+
+    <!-- Compact Delete Icon/Button -->
+    <Button
+        android:id="@+id/btnDeleteSubject"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:text="🗑️"
+        android:textSize="12sp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:backgroundTint="#F44336" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How difficult was it?"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rgDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <RadioButton android:id="@+id/rbEasy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Easy" />
+        <RadioButton android:id="@+id/rbModerate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Moderate" />
+        <RadioButton android:id="@+id/rbDifficult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Difficult" />
+        <RadioButton android:id="@+id/rbNeedHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Need Help" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add notes (Optional)"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

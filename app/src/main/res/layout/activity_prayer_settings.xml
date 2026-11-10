@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings &amp; Reminders"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center" />
+
+        <!-- NOTIFICATION TOGGLES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#6200EE"
+            android:layout_marginBottom="8dp" />
+
+        <Switch
+            android:id="@+id/switchHomeworkReminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homework Deadline Reminders"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <Switch
+            android:id="@+id/switchPrayerReminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prayer Time Reminders (Adhan)"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="24dp" />
+
+        <!-- PRAYER SETTINGS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search City Location:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/etSearchCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="e.g. Dubai, London"
+                android:inputType="textCapWords"
+                android:completionThreshold="3"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnSearchCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCurrentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current: Not set (Using GPS/Makkah)"
+            android:textColor="#6200EE"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculation Method:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerMethod"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- NEW: Adhan Toggles -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active Adhans (Child Device):"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+            <CheckBox android:id="@+id/cbFajr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Fajr" />
+            <CheckBox android:id="@+id/cbDhuhr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Dhuhr" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="24dp">
+            <CheckBox android:id="@+id/cbAsr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Asr" />
+            <CheckBox android:id="@+id/cbMaghrib" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Maghrib" />
+            <CheckBox android:id="@+id/cbIsha" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Isha" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Settings"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnUseGps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use My Current GPS Location"
+            style="?attr/materialButtonOutlinedStyle" />
+
+    </LinearLayout>
+</ScrollView>

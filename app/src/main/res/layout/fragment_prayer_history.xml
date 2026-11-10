@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnPrevWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt;"
+            style="?attr/borderlessButtonStyle"
+            android:textSize="24sp"
+            android:textColor="#6200EE" />
+
+        <!-- CHANGED: Two separate lines for Week Number and Date Range -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvWeekNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Week 1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvDateRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Jan 01 - Jan 07)"
+                android:textSize="13sp"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNextWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&gt;"
+            style="?attr/borderlessButtonStyle"
+            android:textSize="24sp"
+            android:textColor="#6200EE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:background="#EEEEEE">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Prayer"
+            android:textStyle="bold"
+            android:paddingStart="4dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:singleLine="true" />
+
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Mon" android:gravity="center" android:textStyle="bold" android:singleLine="true" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Tue" android:gravity="center" android:textStyle="bold" android:singleLine="true" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Wed" android:gravity="center" android:textStyle="bold" android:singleLine="true" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Thu" android:gravity="center" android:textStyle="bold" android:singleLine="true" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Fri" android:gravity="center" android:textStyle="bold" android:singleLine="true" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Sat" android:gravity="center" android:textStyle="bold" android:singleLine="true" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Sun" android:gravity="center" android:textStyle="bold" android:singleLine="true" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPrayerHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

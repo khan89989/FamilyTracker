@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="#F5F5F5">
+
+        <ImageView
+            android:id="@+id/ivProfilePhoto"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:scaleType="centerCrop"
+            android:background="#DDDDDD"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/tvChildTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Child Name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <!-- Date Navigator (ID added here) -->
+    <LinearLayout
+        android:id="@+id/layoutDateNavigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnPrevDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt;"
+            style="?attr/borderlessButtonStyle"
+            android:textSize="24sp"
+            android:textColor="#6200EE" />
+
+        <TextView
+            android:id="@+id/tvCurrentDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Today"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnNextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&gt;"
+            style="?attr/borderlessButtonStyle"
+            android:textSize="24sp"
+            android:textColor="#6200EE" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="center"
+        app:tabMode="scrollable"
+        android:background="#FFFFFF"
+        app:tabIndicatorColor="#6200EE"
+        app:tabSelectedTextColor="#6200EE"
+        app:tabTextColor="#666666" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerParent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

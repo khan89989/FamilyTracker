@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvChildUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="Child Username" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/tvTaskBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T: 0/0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/badge_pill"
+                android:backgroundTint="#2196F3"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/tvHabitBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H: 0/0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/badge_pill"
+                android:backgroundTint="#9C27B0"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/tvHwBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HW: 0/0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/badge_pill"
+                android:backgroundTint="#FF9800"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:layout_marginEnd="6dp" />
+
+            <!-- POINTS BADGE -->
+            <TextView
+                android:id="@+id/tvPointsBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐ 0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/badge_pill"
+                android:backgroundTint="#FFC107"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnEditChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textColor="#6200EE"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+</LinearLayout>
